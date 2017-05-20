@@ -51,6 +51,7 @@ body {
     padding-right: 20px;
     font-family: Congrat, "Times New Roman", Georgia, Serif;
     color: white;
+    width: 100px;
 }
 
 #idTitreCategorie{
@@ -82,10 +83,12 @@ body {
     display: inline-block;
     margin: auto;
     border: 10px rgb(196, 196, 196) solid;
+    position: relative;
 }
 
-#divGauche #imgFlecheGch{
-    
+#imgFlecheGch{
+    position: absolute;
+    right: 0px;
 }
 
 #imgVS{
@@ -103,8 +106,10 @@ body {
     display: inline-block;
     margin: auto;
     border: 10px rgb(196, 196, 196) solid;
+    position: relative;
 }
 
-#divDroite #imgFlecheDrt{
-    
+#imgFlecheDrt{
+    position: absolute;
+    left: 0px;
 }
