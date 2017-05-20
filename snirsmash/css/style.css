@@ -78,9 +78,14 @@ body {
 #divGauche{
     width: 400px;
     height: 400px;
-    background: grey;
+    background: white;
     display: inline-block;
     margin: auto;
+    border: 10px rgb(196, 196, 196) solid;
+}
+
+#divGauche #imgFlecheGch{
+    
 }
 
 #imgVS{
@@ -94,7 +99,12 @@ body {
 #divDroite{
     width: 400px;
     height: 400px;
-    background: grey;
+    background: white;
     display: inline-block;
     margin: auto;
+    border: 10px rgb(196, 196, 196) solid;
+}
+
+#divDroite #imgFlecheDrt{
+    
 }

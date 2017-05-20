@@ -16,7 +16,7 @@ and open the template in the editor.
             print 'Erreur: ' . $e->getMessage() . "</br>";
         }
         ?>
-        
+
         <meta charset="UTF-8">
         <title>Snir Smash</title>
     </head>
@@ -24,26 +24,26 @@ and open the template in the editor.
         <div id="conteneur">
             <header><img id="header" src="img/headersmash.png"></header>
             <!--requête pour la NavBar-->
-            <?php 
+            <?php
             $reponse = $objBdd->query('SELECT idCat, nomCat FROM categories ORDER BY idCat ASC');
-            
             ?>
-            
+
             <nav id="idNav">
                 <ul>
-                    <?php 
-                    foreach($reponse as $resultat) {
-                    ?>
-                    <li><?php echo $resultat["nomCat"];
-                    }?></li>
+                    <?php
+                    foreach ($reponse as $resultat) {
+                        ?>
+                        <li><?php echo $resultat["nomCat"];
+                }
+                    ?></li>
                 </ul>
             </nav>
             <h1 id="idTitreCategorie">Humour</h1>
             <p id="idCatchphrase">Qui est le développeur le plus drôle ?</p>
             <div id="divZoneVS">
-            <div id="divGauche"></div>
-            <div id="imgVS"><img src="img/vssmash.png"></div>
-            <div id="divDroite"></div>
+                <div id="divGauche"><img id="imgFlecheGch" src="img/flechegauchesmash.png"></div>
+                <div id="imgVS"><img src="img/vssmash.png"></div>
+                <div id="divDroite"><img id="imgFlecheDrt" src="img/flechedroitesmash.png"></div>
             </div>
             <?php
             echo $contenu;
