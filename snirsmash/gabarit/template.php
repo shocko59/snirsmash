@@ -8,14 +8,14 @@ and open the template in the editor.
     <head>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <!--Connexion à la bdd-->
-        <?php // require("bdd/bddconfig.php"); ?>
+        <?php require("bdd/bddconfig.php"); ?>
         <?php
-//        try {
-//            $objBdd = new PDO("mysql:host=$bddname;dbname=$bddname;charset=utf8", $bdduser, $bddpass);
-//        } catch (PDOException $e) {
-//            print 'Erreur: ' . $e->getMessage() . "</br>";
-//        }
-//        ?>
+        try {
+            $objBdd = new PDO("mysql:host=$bddhost;dbname=$bddname;charset=utf8", $bdduser, $bddpass);
+        } catch (PDOException $e) {
+            print 'Erreur: ' . $e->getMessage() . "</br>";
+        }
+        ?>
         
         <meta charset="UTF-8">
         <title>Snir Smash</title>
@@ -23,13 +23,19 @@ and open the template in the editor.
     <body>
         <div id="conteneur">
             <header><img id="header" src="img/headersmash.png"></header>
+            <!--requête pour la NavBar-->
+            <?php 
+            $reponse = $objBdd->query('SELECT idCat, nomCat FROM categories ORDER BY idCat ASC');
+            
+            ?>
+            
             <nav id="idNav">
                 <ul>
-                    <li>Humour</li>
-                    <li>Genant</li>
-                    <li>Relou</li>
-                    <li>Special</li>
-                    <li>Classements</li>
+                    <?php 
+                    foreach($reponse as $resultat) {
+                    ?>
+                    <li><?php echo $resultat["nomCat"];
+                    }?></li>
                 </ul>
             </nav>
             <h1 id="idTitreCategorie">Humour</h1>
