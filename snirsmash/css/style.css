@@ -1,0 +1,97 @@
+@font-face{
+    font-family: "Hanged";
+    src: url("../font/Hanged_Letters.ttf")
+}
+@font-face{
+    font-family: "Congrat";
+    src: url("../font/Congratulations.ttf")
+}
+@font-face{
+    font-family: "Open";
+    src: url("../font/OpenSans-Light.ttf")
+    
+}
+body {
+    margin: 0px;
+}
+
+#conteneur{
+    width: 1300px;
+    margin: auto;
+    /*background-color: aquamarine;*/
+}
+
+#header{
+    margin: auto;
+    margin-bottom: 0px;
+    display: block;
+}
+
+#idNav{
+    text-align: center;
+    background: rgb(160, 0, 18);
+    padding-top: 0px;
+    /*height: 50px;*/
+
+}
+
+#idNav ul{
+    list-style-type: none;
+    font-size: 1.5em;
+    display: inline-block;
+
+}
+
+#idNav ul li{
+    display: inline-block;
+    margin: auto; 
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Congrat, "Times New Roman", Georgia, Serif;
+    color: white;
+}
+
+#idTitreCategorie{
+    font-size: 6em;
+    font-family: Hanged, "Times New Roman", Georgia, Serif;
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(160, 0, 18);
+    margin-bottom: 0px;
+}
+
+#idCatchphrase{
+    font-family: Open;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#divZoneVS{
+    text-align: center;
+    margin-top: 30px;
+    vertical-align: middle;
+}
+
+#divGauche{
+    width: 400px;
+    height: 400px;
+    background: grey;
+    display: inline-block;
+    margin: auto;
+}
+
+#imgVS{
+    display: inline-block;
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+#divDroite{
+    width: 400px;
+    height: 400px;
+    background: grey;
+    display: inline-block;
+    margin: auto;
+}
