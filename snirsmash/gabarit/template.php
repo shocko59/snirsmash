@@ -44,20 +44,20 @@ and open the template in the editor.
             </nav>
 
             <?php
-//            if (isset($_GET["nomCat"])) {
-//                $nomCat = strval($_GET["nomCat"]);
-//            }
+            if (isset($_GET["nomCat"])) {
+                $nomCat = strval($_GET["nomCat"]);
+            }
             ?>
             <!--Récupère et affiche le nom de la catégorie-->
-            <h1 id="idTitreCategorie"><?php echo $_GET["nomCat"]; ?></h1>
+            <h1 id="idTitreCategorie"><?php echo $nomCat; ?></h1>
 
             <?php
-//            if (isset($_GET["adjCat"])) {
-//                $adjCat = strval($_GET["adjCat"]);
-//            }
+            if (isset($_GET["adjCat"])) {
+                $adjCat = strval($_GET["adjCat"]);
+            }
             ?>
             <!--Récupère et affiche l'adj de la catégorie-->
-            <p id="idCatchphrase">Qui est le développeur le plus <?php echo $_GET["adjCat"]; ?> ?</p>
+            <p id="idCatchphrase">Qui est le développeur le plus <?php echo $adjCat; ?> ?</p>
             <div id="divZoneVS">
                 <div id="divGauche"><img id="imgFlecheGch" src="img/flechegauchesmash.png"></div>
                 <div id="imgVS"><img src="img/vssmash.png"></div>
