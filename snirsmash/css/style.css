@@ -38,7 +38,6 @@ body {
 
 #idNav ul{
     list-style-type: none;
-    font-size: 1.5em;
     display: inline-block;
     margin-top: 0px;
     line-height: 50px;
@@ -52,11 +51,16 @@ body {
     font-family: Congrat, "Times New Roman", Georgia, Serif;
     color: white;
     width: 100px;
+    font-size: 1.5em;
 }
 
 #idNav ul li a{
     text-decoration: none;
     color: white;
+}
+
+#idNav ul li a:hover{
+    color: silver;
 }
 
 #idTitreCategorie{
